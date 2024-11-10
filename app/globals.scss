@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  /// SHARED
+  :root {
+    --text-interactive-error: 348 55% 51% / 95%;
+    --text-interactive-valid: 173 49% 44% / 95%;
+    --text-interactive-disabled: 206 11% 29% / 40%;
+
+    --constant-color-valid: 173 49% 44%;
+    --constant-color-active: 212 82% 60% 1;
+    --constant-gradient-earth: linear-gradient(
+      223.53deg,
+      #a5feca 3.65%,
+      #3edceb 31.56%,
+      #2594ff 65.16%,
+      #5533ff 102.22%
+    );
+
+    --icon-interactive-error: 348 55% 51% / 90%;
+
+    --radius: 8px;
+  }
+
+  /// LIGHT THEME
+  :root {
+    --background-block: 216 100% 99%;
+    --background-base: 228 33% 94%;
+    --background-secondary: 206 12% 11% / 03%;
+
+    --text-body: 206 12% 11% / 95%;
+    --text-secondary: 206 11% 29% / 70%;
+    --text-tertiary: 206 11% 29% / 50%;
+    --text-button-primary: 0 0% 100%;
+
+    --border-primary: 210 11% 29% / 15%;
+    --border-inactive: 206 12% 11% / 05%;
+  }
+
+  /// DARK THEME
+  .dark {
+    --background-block: 210 12% 15%;
+    --background-base: 210 12% 12%;
+    --background-secondary: 210 15% 20%;
+
+    --text-body: 0 0% 100%;
+    --text-secondary: 210 12% 75% / 70%;
+    --text-tertiary: 210 12% 75% / 50%;
+    --text-button-primary: 0 0% 100%;
+
+    --border-primary: 0 0% 100% / 15%;
+    --border-inactive: 0 0% 100% / 10%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border-primary;
+  }
+  body {
+    @apply bg-background-base text-text-body;
+  }
+}
