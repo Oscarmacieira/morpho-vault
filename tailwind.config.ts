@@ -57,6 +57,9 @@ const tailwindConfig: Config = {
         header: ["20px", { lineHeight: "24px", fontWeight: "400" }],
         caption: ["12px", { lineHeight: "16px", fontWeight: "500" }],
       },
+      boxShadow: {
+        card: "0px 3px 12px 0px hsla(0, 0%, 0%, 0.09)",
+      },
     },
   },
   plugins: [tailwindcssAnimate, tailwindcssTypography()],
