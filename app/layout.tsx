@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
+import { siteConfig } from "@/lib/site-config";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Morpho Vault",
-  description: "A simple dapp to withdraw all your funds from a Morpho Vault",
+  title: siteConfig.title,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({
