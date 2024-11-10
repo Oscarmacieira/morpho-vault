@@ -15,19 +15,32 @@ body {
 @layer base {
   /// SHARED
   :root {
+    --color-mint-breeze-100: 152 92% 80%;
+    --color-mint-breeze-90: 152 92% 80% / 0.9;
+    --color-mint-breeze-80: 152 92% 80% / 0.8;
+    --color-mint-breeze-30: 152 92% 80% / 0.3;
+
+    --color-aqua-splash-100: 188 80% 60%;
+    --color-aqua-splash-90: 188 80% 60% / 0.9;
+    --color-aqua-splash-80: 188 80% 60% / 0.8;
+    --color-aqua-splash-30: 188 80% 60% / 0.3;
+
+    --color-ocean-blue-100: 212 100% 58%;
+    --color-ocean-blue-90: 212 100% 58% / 0.9;
+    --color-ocean-blue-80: 212 100% 58% / 0.8;
+    --color-ocean-blue-30: 212 100% 58% / 0.3;
+
+    --color-twilight-purple-100: 252 100% 59%;
+    --color-twilight-purple-90: 252 100% 59% / 0.9;
+    --color-twilight-purple-80: 252 100% 59% / 0.8;
+    --color-twilight-purple-30: 252 100% 59% / 0.3;
+
     --text-interactive-error: 348 55% 51% / 95%;
     --text-interactive-valid: 173 49% 44% / 95%;
     --text-interactive-disabled: 206 11% 29% / 40%;
 
     --constant-color-valid: 173 49% 44%;
     --constant-color-active: 212 82% 60% 1;
-    --constant-gradient-earth: linear-gradient(
-      223.53deg,
-      #a5feca 3.65%,
-      #3edceb 31.56%,
-      #2594ff 65.16%,
-      #5533ff 102.22%
-    );
 
     --icon-interactive-error: 348 55% 51% / 90%;
 
