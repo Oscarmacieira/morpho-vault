@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
-import tailwindcssAnimate from "tailwindcss-animate";
 import tailwindcssTypography from "@tailwindcss/typography";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 const tailwindConfig: Config = {
   darkMode: ["class"],
@@ -47,10 +47,14 @@ const tailwindConfig: Config = {
       },
       backgroundImage: ({ theme }) => ({
         /// EARTH
-        "constant-gradient-earth-100": `linear-gradient(223.53deg, hsl(var(--color-mint-breeze-100)) 3.65%, hsl(var(--color-aqua-splash-100)) 31.56%, hsl(var(--color-ocean-blue-100)) 65.16%, hsl(var(--color-twilight-purple-100)) 102.22%)`,
-        "constant-gradient-earth-90": `linear-gradient(223.53deg, hsl(var(--color-mint-breeze-90)) 3.65%, hsl(var(--color-aqua-splash-90)) 31.56%, hsl(var(--color-ocean-blue-90)) 65.16%, hsl(var(--color-twilight-purple-90)) 102.22%)`,
-        "constant-gradient-earth-80": `linear-gradient(223.53deg, hsl(var(--color-mint-breeze-80)) 3.65%, hsl(var(--color-aqua-splash-80)) 31.56%, hsl(var(--color-ocean-blue-80)) 65.16%, hsl(var(--color-twilight-purple-80)) 102.22%)`,
-        "constant-gradient-earth-30": `linear-gradient(223.53deg, hsl(var(--color-mint-breeze-30)) 3.65%, hsl(var(--color-aqua-splash-30)) 31.56%, hsl(var(--color-ocean-blue-30)) 65.16%, hsl(var(--color-twilight-purple-30)) 102.22%)`,
+        "constant-gradient-earth-100":
+          "linear-gradient(to bottom left, hsl(var(--color-mint-breeze-100)), hsl(var(--color-aqua-splash-100)), hsl(var(--color-ocean-blue-100)), hsl(var(--color-twilight-purple-100)))",
+        "constant-gradient-earth-90":
+          "linear-gradient(to bottom left, hsl(var(--color-mint-breeze-90)), hsl(var(--color-aqua-splash-90)), hsl(var(--color-ocean-blue-90)), hsl(var(--color-twilight-purple-90)))",
+        "constant-gradient-earth-80":
+          "linear-gradient(to bottom left, hsl(var(--color-mint-breeze-80)), hsl(var(--color-aqua-splash-80)), hsl(var(--color-ocean-blue-80)), hsl(var(--color-twilight-purple-80)))",
+        "constant-gradient-earth-30":
+          "linear-gradient(to bottom left, hsl(var(--color-mint-breeze-30)), hsl(var(--color-aqua-splash-30)), hsl(var(--color-ocean-blue-30)), hsl(var(--color-twilight-purple-30)))",
 
         /// ACCOUNT
         "constant-gradient-account": `linear-gradient(180deg, hsl(var(--color-soft-sky-blue)) 0%, hsl(var(--color-deep-azure-blue)) 100%)`,
