@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo '[HUKSY] pre-commit: Running lint'
+yarn lint
+echo '[HUKSY] pre-commit: Running format'
+yarn format
+echo '[HUKSY] pre-commit: Running ts'
+yarn ts
