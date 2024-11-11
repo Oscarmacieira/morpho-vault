@@ -2,6 +2,17 @@
 
 A modern, type-safe, and user-friendly interface for interacting with MetaMorpho vaults on Ethereum. Built with Next.js 14, TypeScript, Tailwind CSS, and wagmi v2.
 
+# Table of content
+
+- [Features](#🌟-features)
+- [Configuration](#🛠-configuration)
+- [Continuous Integration](#🔧-continuous-integration)
+- [Project Structure](#📁-project-structure)
+- [Available Scripts](#📦-available-scripts)
+- [Contributing](#🤝-contributing)
+- [License](#📄-license)
+- [Acknowledgments](#🙏-acknowledgments)
+
 ## 🌟 Features
 
 - **Type-Safe Contract Interactions**: Fully typed smart contract interactions using wagmi v2 codegen
@@ -124,6 +135,11 @@ The project uses wagmi CLI for type-safe contract interactions. Contract ABIs an
 Global configuration is managed through a central config file:
 
 [site-config.ts Lines 1-10](https://github.com/oscarmacieira/morpho-vault/blob/main/src/lib/site-config.ts#L1-L7)
+
+## Continuous Integration
+
+The project uses GitHub Actions to run the linting, type checking, and formatting checks on every commit.
+To release on the production environment, create a new Tag release on the `main` branch.
 
 ## 📦 Available Scripts
 
