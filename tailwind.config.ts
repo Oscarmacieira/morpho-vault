@@ -19,6 +19,7 @@ const tailwindConfig: Config = {
         "background-base": "hsl(var(--background-base))",
         "background-secondary": "hsl(var(--background-secondary))",
         "background-block": "hsl(var(--background-block))",
+        "background-primary": "hsl(var(--background-primary))",
 
         /// TEXTS
         "text-body": "hsl(var(--text-body))",
@@ -45,20 +46,28 @@ const tailwindConfig: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: ({ theme }) => ({
+        /// EARTH
         "constant-gradient-earth-100": `linear-gradient(223.53deg, hsl(var(--color-mint-breeze-100)) 3.65%, hsl(var(--color-aqua-splash-100)) 31.56%, hsl(var(--color-ocean-blue-100)) 65.16%, hsl(var(--color-twilight-purple-100)) 102.22%)`,
         "constant-gradient-earth-90": `linear-gradient(223.53deg, hsl(var(--color-mint-breeze-90)) 3.65%, hsl(var(--color-aqua-splash-90)) 31.56%, hsl(var(--color-ocean-blue-90)) 65.16%, hsl(var(--color-twilight-purple-90)) 102.22%)`,
         "constant-gradient-earth-80": `linear-gradient(223.53deg, hsl(var(--color-mint-breeze-80)) 3.65%, hsl(var(--color-aqua-splash-80)) 31.56%, hsl(var(--color-ocean-blue-80)) 65.16%, hsl(var(--color-twilight-purple-80)) 102.22%)`,
         "constant-gradient-earth-30": `linear-gradient(223.53deg, hsl(var(--color-mint-breeze-30)) 3.65%, hsl(var(--color-aqua-splash-30)) 31.56%, hsl(var(--color-ocean-blue-30)) 65.16%, hsl(var(--color-twilight-purple-30)) 102.22%)`,
+
+        /// ACCOUNT
+        "constant-gradient-account": `linear-gradient(180deg, hsl(var(--color-soft-sky-blue)) 0%, hsl(var(--color-deep-azure-blue)) 100%)`,
       }),
       fontSize: {
-        smallButton: ["11px", { lineHeight: "16px", fontWeight: "500" }],
+        buttonSmall: ["11px", { lineHeight: "16px", fontWeight: "500" }],
         link: ["13px", { lineHeight: "20px", fontWeight: "400" }],
         body: ["14px", { lineHeight: "20px", fontWeight: "400" }],
         header: ["20px", { lineHeight: "24px", fontWeight: "400" }],
         caption: ["12px", { lineHeight: "16px", fontWeight: "500" }],
+        secondary: ["13px", { lineHeight: "16px", fontWeight: "400" }],
       },
       boxShadow: {
         card: "0px 3px 12px 0px hsla(0, 0%, 0%, 0.09)",
+      },
+      backdropBlur: {
+        header: "100px",
       },
     },
   },
