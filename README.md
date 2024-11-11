@@ -88,6 +88,11 @@ features/
 
 ## 🔧 Core Features Implementation
 
+### Theme Management
+
+The app uses the `next-themes` library to manage the theme state and persist the theme preference in `localStorage`.
+The available themes are: `light`, `dark`, and `system`.
+
 ### Authentication Flow
 
 The app implements a robust authentication system using wagmi and RainbowKit:

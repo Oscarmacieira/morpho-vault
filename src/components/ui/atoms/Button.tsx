@@ -13,10 +13,12 @@ const buttonVariants = cva(
           "active:bg-constant-gradient-earth bg-constant-gradient-earth-80 text-link !text-text-button-primary hover:bg-constant-gradient-earth-90 disabled:bg-constant-gradient-earth-30",
         light:
           "rounded-[3px] bg-background-primary text-buttonSmall !text-text-body ",
+        outline: "border border-border-primary",
       },
       size: {
         default: "h-[32px] px-[10px] py-[6px]",
         small: "h-[26px] px-[6px]",
+        icon: "p-[6px] h-[24px] w-[24px]",
       },
     },
     defaultVariants: {

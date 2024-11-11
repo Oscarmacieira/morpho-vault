@@ -3,6 +3,7 @@
 import { MorphoIcon } from "@/components/icons/MorphoIcon";
 import { Typography } from "@/components/ui/atoms/Typography";
 import { AccountButton } from "@/features/auth/components/AccountButton";
+import { ThemeToggle } from "@/features/theme/components/ThemeToggle";
 import { cn } from "@/lib/cn";
 
 export const Header = () => {
@@ -23,7 +24,10 @@ export const Header = () => {
             Morpho Test
           </Typography>
         </div>
-        <AccountButton />
+        <div className="flex items-center gap-[16px]">
+          <ThemeToggle />
+          <AccountButton />
+        </div>
       </div>
     </header>
   );
