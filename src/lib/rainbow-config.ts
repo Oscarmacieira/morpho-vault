@@ -11,11 +11,11 @@ import { vMainnet } from "./tenderly-config";
 
 export const rainbowConfig = getDefaultConfig({
   appName: siteConfig.title,
-  projectId: process.env.NEXT_PUBLIC_RAINBOWKIT_PROJECT_ID as string,
+  projectId: envs.NEXT_PUBLIC_RAINBOWKIT_PROJECT_ID,
   chains: [
     mainnet,
-    ...(process.env.NEXT_PUBLIC_TENDERLY_VNETS_ENABLED ? [vMainnet] : []),
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS ? [sepolia] : []),
+    ...(envs.NEXT_PUBLIC_TENDERLY_VNETS_ENABLED ? [vMainnet] : []),
+    ...(envs.NEXT_PUBLIC_ENABLE_TESTNETS ? [sepolia] : []),
   ],
   wallets: [
     {
