@@ -11,8 +11,7 @@
     "ts": "tsc --noEmit",
     "clean": "next lint --fix && tsc --noEmit && prettier --write .",
     "codegen": "wagmi generate --config src/lib/wagmi-cli/wagmi-config.ts",
-    "prepare": "husky || true",
-    "postinstall": "yarn codegen"
+    "prepare": "husky || true"
   },
   "config": {
     "commitizen": {
