@@ -33,18 +33,16 @@ const VIEWS: Record<AuthState, React.ComponentType> = {
 };
 
 export default function RoutePage() {
-  const { isAuthenticated, authState } = useAuth();
+  const { authState } = useAuth();
 
   const Component = VIEWS[authState];
 
   return (
-    <>
-      <PageLayout>
-        {isAuthenticated && <Header />}
-        <PageContent>
-          <Component />
-        </PageContent>
-      </PageLayout>
-    </>
+    <PageLayout>
+      <Header />
+      <PageContent>
+        <Component />
+      </PageContent>
+    </PageLayout>
   );
 }

@@ -3,10 +3,26 @@
 import { MorphoIcon } from "@/components/icons/MorphoIcon";
 import { Typography } from "@/components/ui/atoms/Typography";
 import { AccountButton } from "@/features/auth/components/AccountButton";
+import { useAuth } from "@/features/auth/providers/AuthProvider";
 import { ThemeToggle } from "@/features/theme/components/ThemeToggle";
 import { cn } from "@/lib/cn";
 
 export const Header = () => {
+  const { isAuthenticated } = useAuth();
+
+  if (!isAuthenticated)
+    return (
+      <header
+        className={cn(
+          "w-full absolute top-0 left-0 h-[50px]",
+          "flex justify-end",
+          "p-[16px]",
+        )}
+      >
+        <ThemeToggle />
+      </header>
+    );
+
   return (
     <header
       className={cn(
