@@ -4,12 +4,17 @@ import { cn } from "@/lib/cn";
 import { cva, VariantProps } from "class-variance-authority";
 
 const cardVariants = cva(
-  "flex flex-col rounded-lg border-border-primary bg-background-block shadow-card",
+  cn(
+    "flex flex-col",
+    "rounded-lg border-border-primary border-[1px]",
+    "bg-background-block shadow-card",
+    "gap-[50px]",
+  ),
   {
     variants: {
       size: {
-        default: "p-[20px] gap-[50px]",
-        large: "p-[20px] py-[50px] gap-[50px]",
+        default: "p-[20px]",
+        large: "p-[20px] py-[50px]",
       },
     },
     defaultVariants: {
@@ -37,11 +42,7 @@ const CardHeader = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("flex flex-col space-y-1.5 p-6", className)}
-    {...props}
-  />
+  <div ref={ref} className={cn("flex flex-col", className)} {...props} />
 ));
 CardHeader.displayName = "CardHeader";
 
@@ -51,7 +52,10 @@ const CardTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-center leading-none tracking-tight", className)}
+    className={cn(
+      "text-header !text-text-body leading-none tracking-tight",
+      className,
+    )}
     {...props}
   />
 ));
@@ -87,9 +91,9 @@ CardFooter.displayName = "CardFooter";
 
 export {
   Card,
-  CardHeader,
-  CardFooter,
-  CardTitle,
-  CardDescription,
   CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
 };

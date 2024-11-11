@@ -1,19 +1,22 @@
-import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
+import * as React from "react";
 
 import { cn } from "@/lib/cn";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center gap-[3px] whitespace-nowrap rounded-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
         default:
-          "text-link !text-text-button-primary bg-constant-gradient-earth-80 hover:bg-constant-gradient-earth-90 active:bg-constant-gradient-earth disabled:bg-constant-gradient-earth-30",
+          "active:bg-constant-gradient-earth bg-constant-gradient-earth-80 text-link !text-text-button-primary hover:bg-constant-gradient-earth-90 disabled:bg-constant-gradient-earth-30",
+        light:
+          "rounded-[3px] bg-background-primary text-buttonSmall !text-text-body ",
       },
       size: {
         default: "h-[32px] px-[10px] py-[6px]",
+        small: "h-[26px] px-[6px]",
       },
     },
     defaultVariants: {
