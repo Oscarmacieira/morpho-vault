@@ -35,12 +35,15 @@ body {
     --color-twilight-purple-80: 252 100% 59% / 0.8;
     --color-twilight-purple-30: 252 100% 59% / 0.3;
 
+    --color-soft-sky-blue: 219 100% 82%;
+    --color-deep-azure-blue: 219 100% 57%;
+
     --text-interactive-error: 348 55% 51% / 95%;
     --text-interactive-valid: 173 49% 44% / 95%;
     --text-interactive-disabled: 206 11% 29% / 40%;
 
     --constant-color-valid: 173 49% 44%;
-    --constant-color-active: 212 82% 60% 1;
+    --constant-color-active: 212 82% 60%;
 
     --icon-interactive-error: 348 55% 51% / 90%;
 
@@ -52,6 +55,7 @@ body {
     --background-block: 216 100% 99%;
     --background-base: 228 33% 94%;
     --background-secondary: 206 12% 11% / 03%;
+    --background-primary: 206 12% 11% / 06%;
 
     --text-body: 206 12% 11% / 95%;
     --text-secondary: 206 11% 29% / 70%;
@@ -67,7 +71,7 @@ body {
     --background-block: 210 12% 15%;
     --background-base: 210 12% 12%;
     --background-secondary: 210 15% 20%;
-
+    --background-primary: 206 12% 11% / 06%;
     --text-body: 0 0% 100%;
     --text-secondary: 210 12% 75% / 70%;
     --text-tertiary: 210 12% 75% / 50%;
